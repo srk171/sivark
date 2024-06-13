@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QTS/New user page</title>
+    <link rel="icon" href="pic/brand.jpg">
+    <link rel="stylesheet" href="newuser.css">
+</head>
+
+<body>
+    <div class="newuser">
+
+        
+            <h2>Regristration</h2>
+            <div class="content">
+                <div class="p1">
+                    <b>
+                        <p>Full Name</p>
+                    </b>
+                    <input type="text" placeholder="Enter your Name" id="text">
+                </div>
+                <div class="p1">
+                    <b>
+                        <p>Email</p>
+                    </b>
+                    <input type="email" placeholder="Enter your Email" id="email">
+                </div>
+                <div class="p1">
+                    <b>
+                        <p>Username</p>
+                    </b>
+                    <input type="text" placeholder="Enter your Username" id="utext">
+                </div>
+                <div class="p1">
+                    <b>
+                        <p>Phone Number</p>
+                    </b>
+                    <input type="number" placeholder="Enter your Number" id="number">
+                </div>
+                <div class="p1">
+                    <b>
+                        <p>Password</p>
+                    </b>
+                    <input type="password" placeholder="Enter your Password" id="pass">
+                </div>
+                <div class="p1">
+                    <b>
+                        <p>Confirm Password</p>
+                    </b>
+                    <input type="text" placeholder="Enter your Password" id="pass1">
+                </div>
+                <br><br>
+                <label class="lbl"><b>Gender</b></label><br>
+                <div class="radio">
+                    <input type="radio" name="GENDER" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="GENDER" id="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="GENDER" id="other">
+                    <label for="other">Other</label>
+                    <br><BR>
+                    <button type="button" class="btn" onclick="register()">REGISTER</button>
+                </div>
+            </div>
+    </div>
+    </form>
+
+    <script>
+        function register(){
+            var name=document.getElementById("text").value;
+            var Email=document.getElementById("email").value;
+            var Username=document.getElementById("utext").value;
+            var Number=document.getElementById("number").value;
+            var pass=document.getElementById("pass").value;
+            var passcode=document.getElementById("pass1").value;
+           
+
+            if (name === "" && Email ==="" && Username ==="" && Number ==="" && Number ==="" && pass ==="" && passcode ===""){
+
+                alert("Please enter your details");
+                return;
+            }
+            if (name===""){
+                alert("Please enter your Name");
+                return;
+            }
+            if (Email===""){
+                alert("Please enter your Email");
+                return;
+            }
+            if (Username===""){
+                alert("Please enter your Username");
+                return;
+            }
+            if (Number===""){
+                alert("Please enter your phoneNumber");
+                return;
+            }
+            if (pass===""){
+                alert("Please enter your password");
+                return;
+            }
+            if (passcode===""){
+                alert("Please enter your confirm password");
+                return;
+            }
+            if ((name,Email,Username,Number,pass,passcode)){
+                alert("Regristration successful")
+            }
+            
+
+
+        }
+    </script>
+
+</body>
+
+</html>

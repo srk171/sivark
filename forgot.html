@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QTS/Forgot password page</title>
+    <link rel="icon" href="pic/brand.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <style>
+        body {
+            padding: 0%;
+            margin: 0%;
+            background-color: rgb(14, 15, 15);
+        }
+
+        .rst {
+            background-color: white;
+            height: 500px;
+            width: 400px;
+            padding: 1px;
+            margin-left: 550px;
+            margin-top: 7%;
+            border-radius: 5px;
+
+        }
+
+        #img1 {
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 100%;
+            width: 130px;
+            height: 85px;
+            margin-left: 130px;
+            margin-top: 30px;
+
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: bolder;
+            font-family: "Anta", sans-serif;
+        }
+
+        p {
+            text-align: center;
+            font-weight: 200;
+            font-family: "Namdhinggo", serif;
+        }
+
+        #email {
+            margin-left: 50px;
+            width: 300px;
+            height: 25px;
+            border-radius: 3px;
+        }
+
+        input[type="email"] {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .smt {
+            margin-left: 133px;
+            border-radius: 3px;
+            width: 130px;
+            height: 25px;
+            background-color: green;
+            color: white;
+        }
+
+        .btl {
+            margin-left: 150px;
+        }
+
+        #error {
+            color: red;
+            font-size: large;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="rst">
+        <img src="pic/rst pic.jpg" id="img1">
+        <h2>Forgot Password</h2>
+        <form id="reset">
+            <b>
+                <p>Enter your email and we'll send you a link to reset your password</p>
+            </b><br>
+            <input type="email" id="email" placeholder="Enter your email"><br><br><br>
+            <button type="submit" class="smt" onclick="result()">SUBMIT</button>
+        </form><br><br>
+        <a href="login.html" class="btl">Back to Login</a><br>
+        <h3 id="error"></h3>
+    </div>
+    <script>
+        function result() {
+            var email=document.getElementById("email").value;
+            if (email === ""){
+                alert("Please enter Email ");
+                return;
+            }
+            if((email)){
+                alert("Link sended ")
+            }
+            
+        }
+    
+    
+    
+    </script>
+
+
+
+</body>
+
+</html>

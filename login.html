@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QTS/ login page </title>
+    <link rel="ICON"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD4A-E0y59RmkX0I96ajP6vpLcC3xYzfLd5w&usqp=CAU">
+    <link rel="STYLESHEET" href="login.css">
+</head>
+
+<body>
+    <DIV class="loginform">
+        <img src="pic/login frame.jpg" id="one">
+        <H2>LOGIN</H2><BR>
+        <FORM id="LOGIN">
+            <label><B>Username:</B></label>
+            <input type="text" id="Uname" placeholder="Enter your username" required>
+            <br><br>
+            <label><b>Password:</b></label>
+            <input type="password" id="pass" placeholder="Enter your password" required>
+            <br><br><br>
+            <button type="button" onclick="LOGIN()" id="log">SIGN IN</button>
+            <br><br>
+            <input type="checkbox" id="check">
+            <span>Remember me</span>
+            <br><br>
+            <a href="forgot.html"> Forgot Password?</a>
+            <br><br>
+            <a href="newuser.html">New user</a>
+
+
+
+        </FORM>
+        <p id="error" style="color: rgb(249, 8, 8); margin-top: 10px; margin-left: 50px;"></p>
+    </div>
+    <script>
+        function LOGIN() {
+            var username = document.getElementById("Uname").value;
+            var password = document.getElementById("pass").value;
+            if (username === "" || password === "") {
+                document.getElementById("error").innerText = "please enter your username and password";
+                return;
+            }
+            if ((username, password)) {
+                document.getElementById("error").innerText = "sign in successfull";
+            }
+            else {
+                document.getElementById("error").innerText = "Invalid username or password.";
+            }
+
+        }
+        function siva(username, password) {
+            return username === "" && password === "";
+        }
+    </script>
+
+</body>
+
+</html>

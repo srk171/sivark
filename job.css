@@ -1,0 +1,151 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(16, 116, 237);
+}
+.navbar{
+    overflow: hidden;
+    background-color: black;
+    color: rgb(14, 14, 14);
+    padding: 0%;
+    margin: 0%;
+    padding-left: 25%;
+    
+}
+.navbar a:hover{
+    background-color:rgb(243, 240, 240);
+    border-radius: 5px;
+    color: rgb(5, 5, 5);
+}
+   .navbar ul{
+       list-style-type: none;
+       margin: 0%;
+       padding: 0%;
+       position: fixed;
+       color: rgb(239, 234, 234);
+       background-color: rgb(9, 9, 9);
+       border-radius: 5px;
+      
+}
+   .navbar li{
+    float: left;
+ }
+   .navbar a{
+    display: block;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: rgb(248, 245, 245);
+    font-size: 20px;
+   
+}
+.bgpic{
+    background-image: url(pic/job1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    background-position: center;
+}
+.job1{
+    
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 2%;
+}
+.one{
+font-size: 100px;
+font-family: "Protest Strike", sans-serif;
+margin-left: 150px;
+}
+.one1{
+    font-size: 40px;
+    font-family: "Archivo Black", sans-serif;
+    margin-left:80px ;
+    font-weight: bolder;
+    
+}
+#name{
+    width: 700px;
+    height: 50px;
+    margin-left:80px ;
+    border-radius: 5px;
+
+    
+}
+input[type="name"] {
+    font-size: 30px;
+    
+}
+.one2{
+    font-size: 40px;
+    font-family: "Archivo Black", sans-serif;
+    margin-left:80px ;
+    font-weight: bolder;
+
+}
+#email{
+    width: 700px;
+    height: 50px;
+    margin-left:80px ;
+    border-radius: 5px;
+
+}
+input[type="email"] {
+    font-size: 30px;
+}
+.two{
+    font-size: 40px;
+    font-family: "Archivo Black", sans-serif;
+    margin-left:80px ;
+    font-weight: bolder;
+
+}
+#text{
+    width: 700px;
+    height: 50px;
+    margin-left:80px ;
+    border-radius: 5px;
+
+}
+input[type="text"] {
+    font-size: 30px;
+}
+.resume{
+    font-size: 40px;
+    font-family: "Archivo Black", sans-serif;
+    margin-left:80px ;
+    font-weight: bolder;
+
+}
+.sub{
+    margin-left: 80px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    width: 100px;
+}
+.sub:hover{
+    border:  3px solid rgb(23, 244, 7);   
+}
+.reset{
+    
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    width: 100px;
+}
+.reset:hover{
+    border:  3px solid rgb(23, 244, 7);  
+}
+#error{
+    color: green;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+}

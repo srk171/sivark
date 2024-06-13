@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QTS/job apply page</title>
+    <LINK rel="ICON" href="pic/brand.jpg">
+    <link rel="stylesheet" href="job.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="main.html">HOME</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="our service.html">OUR TESTINGS</a></li>
+            <li><a href="about.html">CONTACT US</a></li>
+            <li><a href="job.html">APPLY JOB</a></li>
+        </ul>
+    </div>
+    <div class="bgpic"></div>
+
+    <div class="job1">
+        <p class="one">Application form</p>
+        <p class="one1">Name</p>
+        <input id="name" type="text" placeholder="Enter your Name">
+        <p class="one2">Email</p>
+        <input type="email" id="email" placeholder="Enter your Email">
+        <p class="two">Address</p>
+        <input type="text" id="text" placeholder="Enter your Address">
+        <p class="resume">Resume</p>
+        <input id="choose" type="file" style="margin-left:80px; ; ">
+        <br><br>
+        <button type="submit" class="sub" onclick="submit()">Submit</button>
+        <p id="error"></p>
+    </div>
+
+    <script>
+        function submit() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var text = document.getElementById("text").value;
+            var choose = document.getElementById("choose").value;
+            if (name === "" && email === "" && text === "" && choose === "") {
+                alert("please enter your details");
+                return;
+            }
+
+            if (name === "") {
+                alert("please enter the name");
+                return;
+
+            }
+
+            if (email === "") {
+                alert("please enter the email");
+                return;
+            }
+            if (text === "") {
+                alert("please enter the address");
+                return;
+
+            }
+            if (choose === "") {
+                alert("choose your Resume file");
+                return;
+            }
+
+            if ((name, email, text, choose)) {
+                document.getElementById("error").innerText = "SUBMIT SUCCESSFULLY";
+
+            }
+
+        }
+
+    </script>
+
+
+
+
+</body>
+
+</html>

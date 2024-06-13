@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QTS/ Reset password page</title>
+    <link rel="icon" href="pic/brand.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <style>
+        body {
+            padding: 0%;
+            margin: 0%;
+            background-color: deepskyblue;
+        }
+
+        .reset {
+            background-color: white;
+            height: 500px;
+            width: 400px;
+            padding: 0px;
+            margin-left: 550px;
+            margin-top: 7%;
+            border-radius: 5px;
+
+        }
+
+        #one {
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+            margin-left: 145px;
+            margin-top: 30px;
+
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: bolder;
+            font-family: "Anta", sans-serif;
+            color: darkblue;
+        }
+
+        p {
+            margin-left: 50px;
+            font-weight: 200;
+            font-size: large;
+
+        }
+
+        #pass {
+            margin-left: 50px;
+            width: 280px;
+            height: 30px;
+            border-radius: 3px;
+        }
+
+        input[type="password"] {
+            font-size: 20px;
+
+        }
+
+        #pass1 {
+            margin-left: 50px;
+            width: 280px;
+            height: 30px;
+            border-radius: 3px;
+
+        }
+
+        #rebtn {
+            margin-left: 50px;
+            background-color: blue;
+            color: white;
+        }
+
+        #cabtn {
+            margin-left: 140px;
+            background-color: red;
+            color: white;
+        }
+
+        #error {
+            color: red;
+            padding-left: 40%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reset">
+        <img src="pic/key.jpg" id="one">
+        <h2>Reset Password</h2>
+        <form>
+            <b>
+                <p>New Password</p>
+            </b>
+            <input type="password" placeholder="Password" id="pass">
+            <b>
+                <p>Confirm New Password</p>
+            </b>
+            <input type="password" placeholder="Password" id="pass1">
+            <br><br>
+            <button type="reset" id="rebtn" onclick="change()">CHANGE</button>
+            <button type="button" id="cabtn">CANCEL</button>
+        </form>
+        <h3 id="error"></h3>
+    </div>
+    <script>
+        function change(){
+            var password=document.getElementById("pass").value;
+            var newpass=document.getElementById("pass1").value;
+            if(password === ""){
+                alert("please enter new password");
+                return;
+            }
+            if(newpass === ""){
+                alert("please enter confirm password");
+                return;
+            }
+            if(password !== newpass){
+                alert("password mismatch")
+                return;
+            }
+            if((password,newpass)){
+                  document.getElementById("error").innerText="Reset success"
+            }
+            
+        
+           
+
+        }
+       
+    </script>
+</body>
+
+</html>

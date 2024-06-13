@@ -1,0 +1,82 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: whitesmoke;
+}
+
+
+
+.navbar{
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    padding: 0%;
+    margin: 0%;
+    padding-left: 25%;
+    font-family: "Rowdies", sans-serif;
+}
+.navbar a:hover{
+    background-color:black;
+    border-radius: 5px;
+    color: white;
+}
+   .navbar ul{
+       list-style-type: none;
+       margin: 0%;
+       padding: 0%;
+       position: fixed;
+       color: black;
+       background-color: white;
+       
+      
+}
+   .navbar li{
+    float: left;
+ }
+   .navbar a{
+    display: block;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+   
+}
+.pic{
+    background-image: url(pic/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+.one{
+    font-size: 50px;
+    color: navy;
+    font-weight: bolder;
+    margin-left: 7%;
+   
+}
+.ONE{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 7%;
+
+}
+.map{
+    padding-left: 9%;
+
+}
+.MAP{
+    
+    font-size:30px ;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 60px;
+}
+.map1{
+    font-size:30px ;
+    font-family: "Kdam Thmor Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 60px;
+}

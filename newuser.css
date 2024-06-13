@@ -1,0 +1,71 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(pic/public.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.newuser{
+    width: 650px;
+    padding: 28px;
+    margin:0 28px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgb(10, 0, 0);
+    box-shadow: 1px 15px 20px  rgb(11, 11, 11);
+    height: 450px;
+}
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(245, 236, 236);
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgb(243, 239, 239);
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.p1{
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+    font-size: larger;
+    color: white;
+}
+.p1 input{
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    font-size: large;
+}
+.lbl{
+    font-size: 20px;
+    padding: 0px 20px 0 5px;
+    color: white;
+}
+.radio label{
+    padding: 2px 18px 0 5px;
+    font-size: 16px;
+    color: white;
+}
+.btn{
+    margin-left: 150px;
+    width: 150px;
+    height: 25px;
+    border-radius: 4px;
+    font-weight: bolder;
+}
+
+
